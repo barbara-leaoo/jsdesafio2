@@ -1,10 +1,12 @@
-let nome = prompt('Digite seu nome')
-alert('Olá ' + nome + ', vamos calcular seu indice de massa corporal?')
+let nome = prompt('Digite seu nome');
+alert('Olá ' + nome + ', vamos calcular seu índice de massa corporal?');
 
-let valor1 = parseInt(prompt('Digite seu peso (em kg)'))
-let valor2 = parseInt(prompt('Digite sua altura (metros)'))
+let peso = parseFloat(prompt('Digite seu peso (em kg)'));
+let altura = parseFloat(prompt('Digite sua altura (em metros)'));
 
-let valor = valor1 / valor2 * valor2
+// Calculando o IMC
+let imc = peso / (altura * altura);
 
-alert('O seu IMC é = ' + valor)
+alert('Seu IMC é: ' + imc);
 
+console.log("IMC:", imc);
